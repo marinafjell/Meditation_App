@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:viewBindingIgnore="true"
+                                                   tools:context=".MainActivity">
+
+
+    <Button
+            android:id="@+id/button_add"
+            android:layout_width="155dp"
+            android:layout_height="72dp"
+            android:text="Добавить"
+            android:textSize="18dp"
+            android:backgroundTint="#269"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/button_read"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:id="@+id/button_read"
+            android:layout_width="155dp"
+            android:layout_height="72dp"
+            android:text="Прочитать"
+            android:textSize="18sp"
+            android:backgroundTint="#269"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/button_add" android:layout_marginBottom="26dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/tapBarMenu"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="380dp"
+            android:layout_height="385dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Добавить текст"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="12dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button_add" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+            android:id="@+id/tapBarMenu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            app:tbm_backgroundColor="#91381C"
+            android:gravity="center"
+
+            app:layout_constraintTop_toBottomOf="@+id/button_read" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_home"/>
+
+
+        <ImageView
+                android:id="@+id/timer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_timer"/>
+        <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+        />
+
+        <ImageView
+                android:id="@+id/breath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_478"/>
+
+
+        <ImageView
+                android:id="@+id/notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_notes"/>
+
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
