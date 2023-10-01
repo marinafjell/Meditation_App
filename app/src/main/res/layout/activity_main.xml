@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/linear_layout"
+              tools:viewBindingIgnore="true"
+              android:gravity="center">
+    <Button
+            android:text="Таймер"
+            android:layout_width="244dp"
+            android:layout_height="94dp"
+            android:id="@+id/timer"
+            android:textSize="24sp"
+            android:backgroundTint="#269"
+            />
+
+    <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="244dp"
+            android:layout_height="94dp"
+            android:background="#269"
+            android:textSize="24sp"
+            />
+    <Button
+            android:text="Дневник прогресса"
+            android:layout_width="244dp"
+            android:layout_height="94dp"
+            android:id="@+id/diary"
+            android:backgroundTint="#269"
+            android:textSize="24sp" />
+
+</LinearLayout>
+
+

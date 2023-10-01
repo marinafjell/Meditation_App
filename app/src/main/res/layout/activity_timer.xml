@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        tools:viewBindingIgnore="true"
+        android:layout_height="match_parent"
+        tools:context=".Timer">
+
+
+    <TextView
+            android:id="@+id/minutesCounter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/detailsElementBackground"
+            android:gravity="center_horizontal|center_vertical"
+            android:text=""
+            android:textColor="#269"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+            android:text="Начать"
+            android:textSize="24sp"
+            android:layout_width="142dp"
+            android:layout_height="0dp"
+            android:id="@+id/startTimer"
+            android:gravity="center"
+            android:backgroundTint="#269"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="23dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="498dp"
+            app:layout_constraintBottom_toTopOf="@+id/tapBarMenu"/>
+
+    <Button
+            android:text="Стоп"
+            android:visibility="invisible"
+            android:textSize="24sp"
+            android:layout_width="142dp"
+            android:layout_height="73dp"
+            android:id="@+id/stopTimer"
+            android:gravity="center"
+            android:backgroundTint="#269"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="160dp"/>
+
+    <com.michaldrabik.tapbarmenulib.TapBarMenu
+            android:id="@+id/tapBarMenu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            app:tbm_backgroundColor="#91381C"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/startTimer" android:layout_marginBottom="81dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_home"/>
+
+
+        <ImageView
+                android:id="@+id/timer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_timer"/>
+        <Space
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+        />
+
+        <ImageView
+                android:id="@+id/breath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_478"/>
+
+
+        <ImageView
+                android:id="@+id/notes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/ic_notes"/>
+
+    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        android:background="?android:attr/detailsElementBackground"-->
